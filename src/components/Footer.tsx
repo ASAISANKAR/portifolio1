@@ -69,11 +69,6 @@ const Footer: React.FC = () => {
                   GitHub
                 </a>
               </li>
-              <li>
-                <a href="mailto:alex@example.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                  saisankar3193@gmail.com
-                </a>
-              </li>
             </ul>
           </div>
         </div>
