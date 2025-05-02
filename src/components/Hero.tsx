@@ -3,9 +3,8 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = ["Full Stack Developer", "IoT Developer"];
+  const fullText = "Full Stack Developer";
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   
   useEffect(() => {
     if (currentIndex < fullText.length) {
