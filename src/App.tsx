@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,9 +10,19 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    // Update the title
-    document.title = "Alex Johnson | Full Stack Developer";
+    const titles = [
+      "Akula Sai Sankar | Full Stack Developer",
+      "Akula Sai Sankar | IoT Developer"
+    ];
+    let i = 0;
+    const interval = setInterval(() => {
+      document.title = titles[i % titles.length];
+      i++;
+    }, 2000); 
+  
+    return () => clearInterval(interval); 
   }, []);
+  
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -20,7 +30,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
       <Experience />
       <Contact />
       <Footer />

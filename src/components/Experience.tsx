@@ -4,7 +4,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 interface ExperienceItem {
   id: number;
   title: string;
-  company: string;
+  course: string;
   location: string;
   period: string;
   description: string[];
@@ -15,45 +15,45 @@ const Experience: React.FC = () => {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      title: "Senior Full Stack Developer",
-      company: "TechNova Solutions",
-      location: "San Francisco, CA",
-      period: "Jan 2022 - Present",
+      title: "Backend Developer",
+      course: "Java Full Stack Development",
+      location: "KLU",
+      period: "July 2024 - December 2024",
       description: [
-        "Led the development of a customer portal application that increased user engagement by 35%",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored junior developers and conducted technical interviews for new hires",
-        "Refactored legacy code to modern architecture, improving performance by 45%"
+        "Developed and integrated RESTful APIs using Spring Boot for a multi-role user platform",
+        "Connected backend services to AWS RDS and implemented secure data handling practices",
+        "Collaborated with frontend and DevOps teams for end-to-end deployment and testing",
+        "Optimized database queries and application logic, improving response time by 40%"
       ],
-      skills: ["React", "Node.js", "AWS", "MongoDB", "TypeScript"]
+      skills: ["Spring Boot", "MySQL", "AWS RDS", "Postman", "JWT", "Git"]
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "DataSync Inc.",
-      location: "Boston, MA",
-      period: "Mar 2019 - Dec 2021",
+      title: "Backend Developer",
+      course: "Python Full Stack Web Development",
+      location: "KLU",
+      period: "Mar 2024 - Dec 2023",
       description: [
-        "Developed and maintained multiple web applications for financial services clients",
-        "Created a real-time analytics dashboard using React and D3.js",
-        "Collaborated with UX designers to implement responsive, accessible interfaces",
-        "Integrated third-party APIs and services for payment processing and data analysis"
+        "Developed a full-stack Airline Reservation System using Django for seamless flight booking and ticket management",
+        "Designed and implemented relational models for users, flights, and bookings using Django ORM",
+        "Integrated secure user authentication, admin dashboard, and booking cancellation features",
+        "Deployed the application with a responsive UI and PostgreSQL database for robust data handling"
       ],
-      skills: ["JavaScript", "React", "Express", "PostgreSQL", "Redux"]
+      skills: ["Python", "Django", "HTML", "CSS", "PostgreSQL", "Django ORM"]
     },
     {
       id: 3,
-      title: "Frontend Developer",
-      company: "WebVision Startup",
-      location: "Seattle, WA",
-      period: "Jun 2017 - Feb 2019",
+      title: "Full Stack Web Developer",
+      course: "MERN Stack Web Developer",
+      location: "KLU",
+      period: "July 2023 - December 2023",
       description: [
-        "Built interactive user interfaces for a SaaS platform using Vue.js",
-        "Implemented responsive designs and ensured cross-browser compatibility",
-        "Participated in Agile development processes with two-week sprint cycles",
-        "Worked closely with backend teams to integrate REST APIs"
+        "Developed a Tourism and Hospitality web application enabling users to explore, book, and review travel services",
+        "Built dynamic front-end interfaces using React and styled them with Tailwind CSS for responsive design",
+        "Implemented backend services using Node.js and Express with MongoDB for data storage and retrieval",
+        "Integrated third-party APIs for location-based search and enhanced user experience"
       ],
-      skills: ["HTML/CSS", "Vue.js", "Sass", "Webpack", "Jest"]
+      skills: ["MongoDB", "Express.js", "React", "Node.js", "Bootstrap"]
     }
   ];
   
@@ -66,7 +66,7 @@ const Experience: React.FC = () => {
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            My professional journey in the software development industry.
+          Showcasing hands-on projects in full-stack development and cloud technologies
           </p>
         </div>
         
@@ -102,7 +102,7 @@ const Experience: React.FC = () => {
                     
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{experience.title}</h3>
                     <div className="flex flex-col sm:flex-row sm:items-center text-gray-600 dark:text-gray-400 mt-1 mb-4">
-                      <span className="font-medium">{experience.company}</span>
+                      <span className="font-medium">{experience.course}</span>
                       <span className="hidden sm:block mx-2">•</span>
                       <span>{experience.location}</span>
                     </div>

@@ -3,8 +3,9 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Full Stack Developer";
+  const fullText = ["Full Stack Developer", "IoT Developer"];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -40,7 +41,7 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-              Hi, I'm <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Alex Johnson</span>
+              Hi, I'm <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Akula Sai Sankar</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 flex items-center">
@@ -50,12 +51,18 @@ const Hero: React.FC = () => {
             </h2>
             
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
-              Crafting beautiful digital experiences through code. I specialize in building 
-              modern web applications with React, Node.js, and TypeScript.
-            </p>
+             Bridging software and hardware to build secure, scalable, and intelligent applications. I specialize in full-stack development, IoT solutions, and cloud-native architectures using React, Spring Boot, and AWS.
+           </p>
+
             
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
               <button 
+                 onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "https://drive.google.com/file/d/1-WqaqxFDPNq7wm4Z_1C-YyvpUkJIslIx/view?usp=sharing";
+                  // link.download = "AkulaSaiSankar_Resume.pdf";
+                  link.click();
+                }}
                 className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
               >
                 Download Resume

@@ -16,28 +16,22 @@ const Skills: React.FC = () => {
     { id: 'backend', name: 'Backend', icon: <Server size={20} /> },
     { id: 'database', name: 'Database', icon: <Database size={20} /> },
     { id: 'design', name: 'Design', icon: <PenTool size={20} /> },
-    { id: 'analytics', name: 'Analytics', icon: <LineChart size={20} /> },
   ];
   
   const skills: Skill[] = [
     { name: 'JavaScript', proficiency: 90, category: 'frontend' },
-    { name: 'TypeScript', proficiency: 85, category: 'frontend' },
     { name: 'React', proficiency: 90, category: 'frontend' },
     { name: 'HTML/CSS', proficiency: 95, category: 'frontend' },
-    { name: 'Vue.js', proficiency: 75, category: 'frontend' },
     { name: 'Node.js', proficiency: 85, category: 'backend' },
     { name: 'Express', proficiency: 80, category: 'backend' },
     { name: 'Python', proficiency: 70, category: 'backend' },
     { name: 'Django', proficiency: 65, category: 'backend' },
-    { name: 'GraphQL', proficiency: 75, category: 'backend' },
     { name: 'MongoDB', proficiency: 80, category: 'database' },
     { name: 'PostgreSQL', proficiency: 85, category: 'database' },
-    { name: 'Firebase', proficiency: 75, category: 'database' },
+    { name: 'MySQL', proficiency: 75, category: 'database' },
     { name: 'UI/UX Design', proficiency: 70, category: 'design' },
     { name: 'Figma', proficiency: 75, category: 'design' },
-    { name: 'Tailwind CSS', proficiency: 90, category: 'design' },
-    { name: 'Google Analytics', proficiency: 65, category: 'analytics' },
-    { name: 'SEO', proficiency: 60, category: 'analytics' },
+    { name: 'Bootstrap', proficiency: 90, category: 'design' },
   ];
   
   const filteredSkills = activeCategory === 'all' 

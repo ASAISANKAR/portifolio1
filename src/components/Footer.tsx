@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <div className="text-2xl font-semibold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
-              Alex Johnson
+              Akula Sai Sankar
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
               A passionate full-stack developer dedicated to creating elegant, efficient, and user-friendly digital solutions.
@@ -60,28 +60,18 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/a-sai-sankar/" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+                <a href="https://github.com/ASAISANKAR" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                  Dribbble
-                </a>
-              </li>
-              <li>
                 <a href="mailto:alex@example.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                  alex@example.com
+                  saisankar3193@gmail.com
                 </a>
               </li>
             </ul>
@@ -92,7 +82,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-600 dark:text-gray-400 text-sm">
-            &copy; {currentYear} Alex Johnson. All rights reserved.
+            &copy; {currentYear} Akula Sai Sankar. All rights reserved.
           </p>
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 md:mt-0 flex items-center">
             Made with <Heart size={14} className="mx-1 text-red-500" /> using React & TypeScript

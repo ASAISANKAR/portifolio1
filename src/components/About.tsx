@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Map, BookOpen, Coffee } from 'lucide-react';
+import mypic from './image.png'
 
 const About: React.FC = () => {
   return (
@@ -10,22 +11,22 @@ const About: React.FC = () => {
             About <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
-            A passionate full-stack developer with a love for creating elegant, efficient, and user-friendly applications.
-          </p>
+              <p className="text-gray-600 dark:text-gray-400 text-lg">
+                Innovative full-stack developer crafting seamless digital experiences with a focus on IoT, performance, and clean design.
+              </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">My Journey</h3>
+            
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              I began my coding journey 5 years ago, fascinated by how technology can solve real-world problems.
-              After completing my Computer Science degree, I've worked with various startups and enterprise companies
-              to build solutions that make a difference.
+             I began my coding journey driven by curiosity and a passion for solving real-world problems with technology. As a Computer Science student specializing in Cyber Security and Blockchain, I've built impactful full-stack and IoT projects, earned global certifications, and collaborated on innovative solutions that bridge software and hardware.
             </p>
+
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               I'm passionate about clean code, user-centered design, and continuous learning. When I'm not coding,
-              you'll find me hiking in the mountains, reading science fiction, or experimenting with new recipes.
+              you'll find me  experimenting with new recipes.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-8">
@@ -73,11 +74,15 @@ const About: React.FC = () => {
           
           <div className="relative overflow-hidden rounded-2xl shadow-xl h-[600px] bg-gray-100 dark:bg-gray-800">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"}}></div>
+            <div 
+            className="w-full h-full flex justify-center items-center bg-center bg-no-repeat" 
+            style={{ backgroundImage: `url(${mypic})`, backgroundSize: 'contain', backgroundPosition: 'center' }}
+          >
+          </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 p-8 text-white">
-                <h3 className="text-2xl font-semibold mb-2">Alex Johnson</h3>
-                <p className="text-gray-300">Full Stack Developer based in San Francisco, CA</p>
+                <h3 className="text-2xl font-semibold mb-2">Akula Sai Sankar</h3>
+                <p className="text-gray-300">Full Stack Developer </p>
               </div>
             </div>
           </div>
